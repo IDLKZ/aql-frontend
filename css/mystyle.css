@@ -1,0 +1,165 @@
+@font-face {
+    font-family: Gilroy;
+    src: url(/fonts/gilroy-regular.ttf);
+}
+
+body{
+    font-family: Gilroy;
+    overflow-x: hidden;
+}
+
+.fw-500{
+    font-weight: 500;
+}
+.fw-600{
+    font-weight: 600;
+}
+
+.mh-60{
+    min-height: 60vh;
+}
+.mh-80{
+    min-height: 80vh;
+}
+
+.light-blue{
+    background-color: #2F75FF;
+}
+.bg-gray{
+    background: #F6F6F6;
+}
+.btn-transparent{
+    background-color: transparent;
+}
+
+
+.aql-brand{
+    font-weight: 900!important;
+    margin-right: 3rem;
+}
+
+.aql-logo-bg{
+    background-image: url("/image/AQLBG.png");
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.aql-logo-bg-footer{
+    background-image: url("/image/AQL2.png");
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.card-about{
+    width: 320px;
+    min-height: 120px;
+    border-radius: 10px;
+    background-color: rgba(250, 250, 250, 0.9);
+    text-align: start;
+    padding: 20px;
+}
+
+@media screen and (max-width: 400px){
+    .card-about{
+        width: 100%;
+    }
+}
+
+.card-assistance{
+    min-height: 240px;
+    padding: 20px;
+}
+.assistance-icon{
+    font-size: 50px;
+    color: #2F75FF;
+}
+
+.text-violet{
+    color: #6C0FC2;
+}
+.bg-violet{
+    background: #6C0FC2;
+}
+.card-attribute-violet{
+    border-right:8px solid #6C0FC2;
+}
+
+
+.text-light-orange{
+    color: #F2C94C;
+}
+.bg-light-orange{
+    background: #F2C94C;
+}
+.card-attribute-light-orange{
+    border-right:8px solid #F2C94C;
+}
+
+.text-orange{
+    color: #F55810;
+}
+.bg-orange{
+    background: #F55810;
+}
+.card-attribute-orange{
+    border-right:8px solid #F55810;
+}
+
+.text-light-green{
+    color: #0D9B49;
+}
+.bg-light-green{
+    background: #0D9B49;
+}
+.card-attribute-light-green{
+    border-right:8px solid #0D9B49;
+}
+
+.card-about-description{
+    font-size: 12px;
+    line-height: 15px;
+}
+.text-gray{
+    color: #BDBDBD;
+}
+
+.circle-radius{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    font-size: 40px;
+    color: white;
+}
+.swiper {
+    width: 100%;
+    min-height: 250px;
+}
+.swiper-wrapper{
+    align-items: center;
+}
+.swiper-slide{
+    display: flex;
+    justify-content: center;
+}
+.assistant-image{
+    filter: grayscale(100%);
+    cursor: pointer;
+}
+
+.assistant-image:hover{
+    filter:none;
+}
+
+.price-button{
+    display: table-footer-group;
+}
+
+.footer-bg{
+    padding: 20px;
+    background: #2F75FF;
+}
+.header-bottom{
+    background: #26313E;
+}
