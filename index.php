@@ -514,9 +514,9 @@
                     Оставьте ваше имя и номер телефона
                     Наш менеджер будет рад обсудить с вами все ваши вопросы
                 </p>
-                <form class="d-md-flex">
-                    <input class="form-control me-2" style="width: auto" type="text" placeholder="Номер телефона" aria-label="Phone number">
-                    <button class="btn bg-light-orange text-dark" type="submit">Позвонить мне</button>
+                <form class="d-md-flex" method="post" action="email.php">
+                    <input class="form-control me-2 my-2" style="width: auto" type="text" placeholder="Номер телефона" aria-label="Phone number" name="phone" required>
+                    <button class="btn bg-light-orange text-dark my-2" type="submit">Позвонить мне</button>
                 </form>
             </div>
             <div class="col-md-6 align-self-center aql-logo-bg-footer" style="height: 250px"></div>
@@ -559,8 +559,32 @@
 <script src="js/bootstrap.bundle.js"></script>
 <script src="js/bootstrap.js"></script>
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="js/mystyle.js"></script>
+<script>
+    AOS.init();
+let result = <?= json_encode($_COOKIE['result']); ?>;
 
+if(result){
+    if(result == 1){
+        Swal.fire({
+            icon: 'success',
+            title: 'Успешно отправлено',
+            text: 'Наши менеджеры перезвонят Вам в самое удобное время!',
+        })
+    }
+    else{
+        Swal.fire({
+            icon: 'error',
+            title: 'Упс...',
+            text: 'Попробуйте позже!',
+        })
+    }
+}
+
+
+</script>
 <!-- Option 1: Bootstrap Bundle with Popper -->
 
 </body>
