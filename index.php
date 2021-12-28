@@ -570,7 +570,8 @@
 <script>
 
     AOS.init();
-let result = "<?php json_encode($_COOKIE['result']) ;?>";
+let result = "<?= ($_COOKIE['result']) ;?>";
+
 if(result){
     if(result == 1){
         Swal.fire({
