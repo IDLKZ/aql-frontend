@@ -20,43 +20,48 @@
 <body>
 
 <!--Header Starts-->
-<header class="container">
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
-        <div class="container-fluid">
-            <a class="navbar-brand fw-bolder aql-brand" href="/">
-                <img src="image/AQL.png" width="46">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link fw-600 text-black" href="#">Главная</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link fw-600 text-black" href="#">О нас</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link fw-600 text-black" href="#">Контакты</a>
-                    </li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#" class="btn btn-transparent me-3">
-                        Войти
-                    </a>
-                    </li>
-                    <li>
-                        <a href="#" class="btn light-blue text-white">
-                            Регистрация
-                        </a>
-                    </li>
-                </ul>
-
+<section class="position-fixed w-100" style="z-index: 1000">
+    <header class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bolder aql-brand" href="/">
+                    <img src="image/AQL.png" width="46">
+                </a>
+                <button class="navbar-toggler hvr-bounce-to-bottom collapsed"  type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarSupportedContent" data-toggle="collapse" data-target=".navbar-collapse" >
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item" >
+                            <a class="nav-link fw-600 text-black" href="/">Главная</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-600 text-black" href="#about">О нас</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-600 text-black" href="#contact">Контакты</a>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="nav-item">
+                            <a class="nav-link fw-600 text-success" href="tel:87789959862"><i class="fas fa-phone"></i> 8 778 995 98 62</a>
+                        </li>
+                        <li><a href="#" class="btn btn-transparent me-3">
+                                Войти
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn light-blue text-white">
+                                Регистрация
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
-</header>
+        </nav>
+    </header>
+</section>
+
 <!--Header Ends-->
 
 <!--Section About-->
@@ -122,7 +127,7 @@
 <!--End Section About-->
 
 <!--Section Offer-->
-<section class="my-offer bg-gray mh-80">
+<section class="my-offer bg-gray mh-80" id="about">
     <div class="container py-5">
         <div class="row py-5">
           <div class="col-md-4 text-center">
@@ -503,7 +508,7 @@
 <!--End Section Price-->
 
 <!--Section Footer-->
-<footer class="footer-bg ">
+<footer class="footer-bg " id="contact">
     <div class="container">
         <div class="row mh-60">
             <div class="col-md-6 align-self-center">
@@ -536,13 +541,13 @@
             <div class="col-md-6">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 list-group-horizontal justify-content-md-end">
                     <li class="list-group-item bg-transparent border-0">
-                        <a class="nav-link fw-600 text-white" href="#">Главная</a>
+                        <a class="nav-link fw-600 text-white" href="/">Главная</a>
                     </li>
                     <li class="list-group-item bg-transparent border-0">
-                        <a class="nav-link fw-600 text-white" href="#">О нас</a>
+                        <a class="nav-link fw-600 text-white" href="#about">О нас</a>
                     </li>
                     <li class="list-group-item bg-transparent border-0">
-                        <a class="nav-link fw-600 text-white" href="#">Контакты</a>
+                        <a class="nav-link fw-600 text-white" href="#contact">Контакты</a>
                     </li>
                 </ul>
             </div>
@@ -563,8 +568,8 @@
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="js/mystyle.js"></script>
 <script>
+
     AOS.init();
-let result = <?= json_encode($_COOKIE['result']); ?>;
 
 if(result){
     if(result == 1){
@@ -582,8 +587,6 @@ if(result){
         })
     }
 }
-
-
 </script>
 <!-- Option 1: Bootstrap Bundle with Popper -->
 
