@@ -20,7 +20,7 @@
 <body>
 
 <!--Header Starts-->
-<section class="position-fixed w-100" style="z-index: 1000">
+<section class="position-fixed w-100 bg-white" style="z-index: 1000">
     <header class="container">
         <nav class="navbar navbar-expand-lg navbar-light bg-white">
             <div class="container-fluid">
