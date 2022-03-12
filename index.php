@@ -46,12 +46,12 @@
                         <li class="nav-item">
                             <a class="nav-link fw-600 text-success" href="tel:87789959862"><i class="fas fa-phone"></i> 8 778 995 98 62</a>
                         </li>
-                        <li><a href="#" class="btn btn-transparent me-3">
+                        <li><a href="https://aql.education/" class="btn btn-transparent me-3">
                                 Войти
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="btn light-blue text-white">
+                            <a href="https://aql.education/" class="btn light-blue text-white">
                                 Регистрация
                             </a>
                         </li>
@@ -74,7 +74,7 @@
                     <br>
                     онлайн школу
                 </h1>
-                <a href="#" class="btn light-blue text-white mt-sm-2 px-5">
+                <a href="https://aql.education/" class="btn light-blue text-white mt-sm-2 px-5">
                     Начать
                 </a>
                 <small class="d-block mt-2">Первые 14 дней бесплатно</small>
